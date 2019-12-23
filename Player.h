@@ -1,10 +1,10 @@
-#include "Creature.h"
+
 
 class Player : public Creature
 {
 	public: 
 		int player_level;
-	Player(string custom_name, int player_level = 1,
+	Player(string custom_name="", int player_level = 1,
 		char symbol = '@',
 		int amount_of_health = 10, int damage_per_attack = 1,
 		int carrying_gold = 0)
@@ -41,11 +41,3 @@ class Player : public Creature
 		cout<<"You have "<< getAmount_of_health() << " amounts of health and are carrying " << getCarrying_gold() << " gold.\n";
 	}
 };
-
-
-		
-int main()
-{
-	Player pedro{"pedro"};
-}
-	
